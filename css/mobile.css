@@ -1,0 +1,99 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6 1fr);
+}
+.container > *{
+    border: 1px solid red;
+}
+
+header{
+    grid-column: 1/7;
+}
+.banner{
+    background-image: url("../img/bg-home.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 650px;
+    display: grid;
+}
+.hide-mobile{
+    display: none;
+
+}
+.banner nav{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    align-content: center;
+    padding: 10px;
+    background-color: rgb(14, 14, 14, .55);
+    grid-template-areas: 
+    "logo logo logo ham";
+}
+nav .logo{
+    grid-area: logo;
+    margin-left: 10px;
+}
+nav .ham-menu{
+    grid-area: ham;
+    justify-self: end;
+    align-self: center;
+    margin-right: 10px;
+}
+.banner .satellite-image{
+    margin: 15px 0 0 30px;
+}
+.banner .header-text{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    right: 0; left: 0; top: 0; bottom: 0;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    margin-top: -400px;
+}
+.header-text h1{
+    cursor: pointer;
+    padding: 20px;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 1px 1px 3px rgb(83, 83, 83);
+}
+.header-text h2, h3{
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 3px rgb(83, 83, 83);
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text h2{
+    font-size: 43px;
+    padding: 20px;
+}
+.header-text span{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 3px rgb(83, 83, 83);
+    font-size: 18px;
+    color: #fff;
+    background-color: #111;
+    width: 150px;
+    padding: 10px;
+    margin: auto;
+}
+
+.header-text h3{
+    font-family: 'Audiowide', cursive;
+    font-size: 18px;
+    color: #cacaca;
+    background-color: rgb(17, 17, 17, 0.5);
+    padding: 10px;
+    margin-top: 120px;
+    margin-bottom: 78px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header-text ul li{
+    margin-bottom: 25px;
+}
+section{
+    grid-row: 7/7;
+}
